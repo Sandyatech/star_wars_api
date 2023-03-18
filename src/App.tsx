@@ -10,13 +10,11 @@ const App: React.FC = () => {
             const apiResponse = await fetch(`https://swapi.dev/api/people/${dataItem}/`);
             const json = await apiResponse.json();
             setSwChar(json.name);
-            console.log(json);
         }
         getName(charNumber);
     }, [charNumber]);
     return (
         <div className="App-header">
-            
             <SwCharContainer name={swChar} />
         </div>
 
