@@ -1,4 +1,3 @@
-import { SwCharName } from '../sw_char_name';
 import React from "react";
 interface SwCharProps {
     name: string;

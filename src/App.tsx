@@ -15,7 +15,7 @@ const App: React.FC = () => {
                 case 500: setSwChar(FETCH_ERROR_500); break
                 case 418: setSwChar(FETCH_ERROR_418); break
             }
-            
+
 
         }
         getName(charNumber);
@@ -25,7 +25,7 @@ const App: React.FC = () => {
             <SwCharContainer name={swChar} />
         </div>
 
-        );
-    };
+    );
+};
 
 export default App;
